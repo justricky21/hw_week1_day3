@@ -76,9 +76,10 @@ users["Erik"][:lottery_numbers].min
 
 # 6. Return an array of Avril's lottery numbers that are even
 
-for even in users["Avril"][:lottery_numbers]
-  if even % 2 == 0
-    p even
+even = []
+for even_num in users["Avril"][:lottery_numbers]
+  if even_num % 2 == 0
+    even.push(even_num)
   end
 end
 
